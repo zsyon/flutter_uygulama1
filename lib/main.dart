@@ -33,16 +33,21 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Row(
+        child: Column(
           children: [
             Expanded(
               child: TextField(
                 controller: _searchController,
                 decoration: InputDecoration(
                   labelText: "Kullanıcı Ara",
-                  border: OutlineInputBorder(),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(24),
+                  ),
                 ),
               ),
+            ),
+            Expanded(
+              child: Container(),
             ),
           ],
         ),
