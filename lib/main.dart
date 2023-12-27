@@ -47,11 +47,28 @@ class _MyHomePageState extends State<MyHomePage> {
             SizedBox(height: 24),
             Expanded(
               child: Container(
+                width: double.infinity,
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.black, // Kenarlığın rengi
                     width: 1.0, // Kenarlığın kalınlığı
                   ),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 60,
+                      width: 320,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(24),
+                        border: Border.all(
+                          color: Colors.black, // Kenar rengi (siyah)
+                          width: 1, // Kenar kalınlığı
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
