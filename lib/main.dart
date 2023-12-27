@@ -35,19 +35,25 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Expanded(
-              child: TextField(
-                controller: _searchController,
-                decoration: InputDecoration(
-                  labelText: "Kullanıcı Ara",
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(24),
-                  ),
+            TextField(
+              controller: _searchController,
+              decoration: InputDecoration(
+                labelText: "Kullanıcı Ara",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(24),
                 ),
               ),
             ),
+            SizedBox(height: 24),
             Expanded(
-              child: Container(),
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black, // Kenarlığın rengi
+                    width: 1.0, // Kenarlığın kalınlığı
+                  ),
+                ),
+              ),
             ),
           ],
         ),
